@@ -38,15 +38,15 @@ public class App {
     }
 
     public static String getGrades(int score) {
-        switch (score) {
-            case 100:
-            case 95:
+        switch (score/10) {
+            case 10:
+            case 9:
                 return "A";
-            case 85:
+            case 8:
                 return "B";
-            case 72:
+            case 7:
                 return "C";
-            case 65:
+            case 6:
                 return "D";
             default:
                 return "F";
